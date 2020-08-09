@@ -1,0 +1,53 @@
+body {
+  background-color: antiquewhite;
+}
+.form-check-label {
+  &:hover {
+    background-color: #17a2b8;
+    color: white;
+  }
+}
+.form-check-input:checked ~ .form-check-label {
+  background-color: #17a2b8;
+  color: white;
+}
+.form-check-input ~ .form-check-label.correct {
+  background-color: #28a745 !important;
+  color: white !important;
+  pointer-events: none;
+}
+
+.form-check-input:checked ~ .form-check-label.incorrect {
+  background-color: #da3545 !important;
+  color: white !important;
+  pointer-events: none;
+}
+.form-check-label.incorrect {
+  pointer-events: none;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.navdir {
+  position: relative;
+  height: 35px;
+  .next {
+    position: absolute;
+    right: 0;
+  }
+  .prev {
+    position: absolute;
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .question-title {
+    font-size: 14px;
+  }
+  .counter {
+    font-size: 12px;
+  }
+}
