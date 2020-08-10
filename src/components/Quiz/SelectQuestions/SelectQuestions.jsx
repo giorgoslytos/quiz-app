@@ -118,7 +118,7 @@ const SelectQuestions = () => {
           </div>
           <div className="form-group mt-4">
             <input
-              className="w-100 btn btn-info text-white"
+              className="w-100 button"
               type="submit"
               value="START!"
               onClick={submitForm}

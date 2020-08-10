@@ -44,7 +44,10 @@ const SingleQuestion = () => {
       </div>
       <form className={reviewMode ? 'pointer-events-none' : ''}>
         {quizCards[navPosition].answers.map((option) => (
-          <div className="form-check p-0" key={option}>
+          <div
+            className="form-check p-0"
+            key={quizCards[navPosition].question + '-' + option}
+          >
             <input
               className="form-check-input"
               type="radio"

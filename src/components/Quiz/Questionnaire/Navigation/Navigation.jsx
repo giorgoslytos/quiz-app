@@ -14,7 +14,7 @@ const Navigation = () => {
     <div className="navdir mt-3">
       {navPosition !== 0 ? (
         <button
-          className="btn btn-info text-white prev"
+          className="prev"
           onClick={() => {
             dispatchNavDir({ type: 'PREV' });
           }}
@@ -27,7 +27,7 @@ const Navigation = () => {
 
       {navPosition < quizCards.length - 1 ? (
         <button
-          className="btn btn-info text-white next"
+          className="next"
           onClick={() => {
             dispatchNavDir({ type: 'NEXT' });
           }}
@@ -36,7 +36,7 @@ const Navigation = () => {
         </button>
       ) : (
         <button
-          className="btn btn-info text-white next"
+          className="next"
           onClick={() => {
             setResultPercentage();
           }}
