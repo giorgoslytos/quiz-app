@@ -21,7 +21,7 @@ const Results = () => {
         correctAnswers === 1 ? 'correct answer' : 'correct answers'
       } out of ${total} questions`}</div>
       <button
-        className="btn btn-info text-white m-3"
+        className="m-3"
         onClick={() => {
           handleReviewBtn();
         }}
@@ -29,7 +29,7 @@ const Results = () => {
         Review Results!
       </button>
       <button
-        className="btn btn-info text-white m-3"
+        className="m-3"
         onClick={() => {
           handleAgainBtn();
         }}
